@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduSolve - Rencana Belajar Pintar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📚 EduSolve</h1>
+    <p>Temukan gaya belajarmu & buat rencana belajar cerdas dengan AI</p>
+  </header>
+
+  <section class="quiz">
+    <h2>Kuis Gaya Belajar</h2>
+    <p>Pilih jawaban yang paling sesuai dengan dirimu:</p>
+    <form id="quizForm">
+      <label>1. Aku lebih mudah belajar dengan...</label><br>
+      <input type="radio" name="q1" value="visual"> Melihat gambar/video<br>
+      <input type="radio" name="q1" value="auditory"> Mendengar penjelasan<br>
+      <input type="radio" name="q1" value="kinesthetic"> Melakukan praktik langsung<br><br>
+
+      <label>2. Aku belajar paling fokus saat...</label><br>
+      <input type="radio" name="q2" value="morning"> Pagi hari<br>
+      <input type="radio" name="q2" value="evening"> Malam hari<br>
+      <input type="radio" name="q2" value="noisy"> Saat suasana ramai<br><br>
+
+      <button type="button" onclick="generatePlan()">Buat Rencana Belajar</button>
+    </form>
+  </section>
+
+  <section id="planSection" class="hidden">
+    <h2>🎯 Rencana Belajarmu</h2>
+    <div id="planResult"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 EduSolve AI | SMA Project by <a href="https://github.com/edusolverai">edusolverai</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
